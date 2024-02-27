@@ -14,8 +14,8 @@ const App=() =>   {
 
   useEffect(()=>{
     setInterval(()=>{
-      setHeroCount((count)=>{return count===2?0:count+1})
-    },3000);
+      setHeroCount((count)=>{return count===0?2:count-1})
+    },5000);
   })
 
   return (
